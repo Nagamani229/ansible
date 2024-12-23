@@ -1,5 +1,6 @@
 - name: install nginx in multiple servrs
-  host: servers 
+  host: localhost
+  vars: servers
   become: yes
   tasks:
   - name: install nginx package
@@ -10,3 +11,13 @@
     ansible.builtin.package:
       name: nginx
       state: started
+
+  - name: Open firewall for HTTP and HTTPS
+    ansible.builtin.firewalld:
+        service: "{{ item }}"
+        permanent: yes
+        state: enabled
+    loop:
+    - http
+    - https
+    
