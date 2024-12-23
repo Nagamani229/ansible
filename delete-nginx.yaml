@@ -1,0 +1,11 @@
+- name: delete nginx in multiple servers
+  hosts: roboshop:children
+  become: yes
+  tasks:
+  - name: uninstall packages
+    ansible.builtin.package:
+       name: "{{item.name}}" # item is a default keyword
+       state: "{{item.state}}"
+    loop:
+    - {name: 'nginx', state: 'absent'}
+   
