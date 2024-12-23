@@ -1,16 +1,15 @@
 - name: install and run nginx in multiple servers
   hosts: roboshop:children
   become: yes
-  tasks:
-  - name: install nginx 
-    ansible.builtin.pacakge:
-     name: nginx
-     state: present
-     
-  - name: run nginx 
+   tasks:
+  - name: install nginx package
     ansible.builtin.package:
       name: nginx
-      state: started
+      state: present
+  - name: run nginx
+    ansible.builtin.package:
+       name: nginx
+       state: started
 
   - name: Open firewall for HTTP and HTTPS
     ansible.builtin.firewalld:
