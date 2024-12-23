@@ -1,20 +1,17 @@
-284.87.94.9
-345.98.08.8
-
+192.187.56.20
+192.187.56.30
 
 [web]
 34.224.31.172
+[catalogue]
+192.187.56.5
+192.187.56.6
 
 [cart]
-192.84.89.4
-192.84.89.5
+192.187.56.7
+192.187.56.8
 
-[user]
-192.84.89.6
-192.84.89.7
-
-[roboshop:childern](group of hosts or list of hosts)
------------------
+[roboshop:children]
 web
 cart
-user
+catalogue
