@@ -18,12 +18,5 @@
       name: nginx
       state: restarted
 
-  - name: Open firewall for HTTP and HTTPS
-    ansible.builtin.firewalld:
-        service: "{{ item }}"
-        permanent: yes
-        state: enabled
-    loop:
-    - http
-    - https
+  
     
