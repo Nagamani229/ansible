@@ -12,7 +12,6 @@
        name: nginx
        state: started
        enabled: yes
-       ignore_errors: true # ansible will not exit even we got error
 
   - name: Open firewall for HTTP and HTTPS
     ansible.builtin.firewalld:
