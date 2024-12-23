@@ -10,6 +10,7 @@
     ansible.builtin.package:
        name: nginx
        state: latest
+       ignore_errors: true # ansible will not exit even we got error
 
   - name: Open firewall for HTTP and HTTPS
     ansible.builtin.firewalld:
