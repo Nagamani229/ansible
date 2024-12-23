@@ -9,7 +9,7 @@
   - name: run nginx
     ansible.builtin.package:
        name: nginx
-       state: "started, absent, installed, latest, present"
+       state: "absent, installed, latest, present, removed, got: started, absent, installed, latest, present"
 
   - name: Open firewall for HTTP and HTTPS
     ansible.builtin.firewalld:
