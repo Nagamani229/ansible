@@ -1,5 +1,14 @@
 34.224.8.20
 
+[localhost]
+localhost
+
+[localhost:vars]
+vars:
+Course= "DevOps from iventory"
+Trainer= "Siva"
+Duration= "110HRS"
+
 [web]
 34.224.31.172
 
