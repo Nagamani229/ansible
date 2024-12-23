@@ -7,16 +7,16 @@
       name: nginx
       state: present
       update_cache: yes
-      name: Start nginx service
-      systemd:
+  - name: Start nginx service
+    ansible.builtin.service:
         name: nginx
         state: started  # Correct state to start the service
         enabled: yes  # Ensure nginx starts on boot
 
   - name: Restart nginx service 
-    systemd:
-    name: nginx
-    state: restarted
+    ansible.builtin.service:
+      name: nginx
+      state: restarted
 
   - name: Open firewall for HTTP and HTTPS
     ansible.builtin.firewalld:
