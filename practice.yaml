@@ -13,7 +13,7 @@
         state: started  # Correct state to start the service
         enabled: yes  # Ensure nginx starts on boot
 
-  - name: Restart nginx service (if needed)
+  - name: Restart nginx service 
     systemd:
     name: nginx
     state: restarted
