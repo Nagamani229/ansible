@@ -13,10 +13,10 @@
         state: started  # Correct state to start the service
         enabled: yes  # Ensure nginx starts on boot
 
-    - name: Restart nginx service (if needed)
-      systemd:
-        name: nginx
-        state: restarted
+  - name: Restart nginx service #(if needed)
+    systemd:
+    name: nginx
+    state: restarted
 
   - name: Open firewall for HTTP and HTTPS
     ansible.builtin.firewalld:
