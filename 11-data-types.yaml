@@ -5,8 +5,8 @@
     SKILLS: #Skills is list of type
     - DevOps
     - shell
-    -linux
-    -Ansible
+    - linux
+    - Ansible
     Experience: #experience is a map type. it contains key value pair
      DevOps: 7
      Shell: 6
