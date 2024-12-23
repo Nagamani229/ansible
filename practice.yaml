@@ -1,7 +1,7 @@
 - name: install and run nginx in multiple servers
   hosts: roboshop:children
   become: yes
-   tasks:
+  tasks:
   - name: install nginx package
     ansible.builtin.package:
       name: nginx
