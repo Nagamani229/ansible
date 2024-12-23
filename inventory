@@ -4,7 +4,6 @@
 localhost
 
 [localhost:vars]
-vars:
 Course= "DevOps from iventory"
 Trainer= "Siva"
 Duration= "110HRS"
