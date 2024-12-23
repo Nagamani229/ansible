@@ -10,4 +10,4 @@
       Course: "DevOps with AWS"
   - name: check variables
     ansible.builtin.debug:
-      msg: "Hi, I am leaning Devops, Trainer is siva and Duration is 110HRS"
+      msg: "Hi, I am leaning {{Course}}, Trainer is {{Trainer}} and Duration is {{Duration}}"
