@@ -6,8 +6,8 @@
     Trainer: "Siva"
     Duration: "110HRS"
   tasks:
+  - name: check variables
     vars: 
       Course: "DevOps with AWS"
-  - name: check variables
     ansible.builtin.debug:
       msg: "Hi, I am leaning {{Course}}, Trainer is {{Trainer}} and Duration is {{Duration}}"
