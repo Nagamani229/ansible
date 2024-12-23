@@ -10,16 +10,14 @@ Duration= "110HRS"
 PERSON= "Mani from inventory"
 WISHES= "Morning from inventory"
 
-[web]
-34.224.31.172
 
-[catalogue]
-192.187.56.5
-192.187.56.6
+[web]
+54.152.204.108
 
 [cart]
-192.187.56.7
-192.187.56.8
+54.211.67.148
+172.31.28.8
+
 
 [roboshop:children]
 web
