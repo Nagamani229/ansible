@@ -1,6 +1,5 @@
 - name: install and run nginx in multiple servers
   hosts: roboshop:children
-  vars: servers
   become: yes
   tasks:
   - name: install nginx package
