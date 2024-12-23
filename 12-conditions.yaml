@@ -1,5 +1,5 @@
 - name: conditions
-  hosts: loca;host
+  hosts: localhost
   tasks:
   - name: check roboshop user exist or not
     ansible.builtin.command: id roboshop
