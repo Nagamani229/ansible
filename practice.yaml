@@ -1,15 +1,17 @@
 - name: install and run nginx in multiple servers
-  hosts: roboshop:children
+  hosts: servers
   become: yes
   tasks:
   - name: install nginx package
     ansible.builtin.package:
       name: nginx
       state: present
+      update_cache: yes
   - name: run nginx
     ansible.builtin.package:
        name: nginx
-       state: latest
+       state: started
+       enabled: yes
        ignore_errors: true # ansible will not exit even we got error
 
   - name: Open firewall for HTTP and HTTPS
