@@ -8,7 +8,7 @@
       state: present
       update_cache: yes
   - name: run nginx
-    ansible.legacy.dnf:
+    ansible.builtin.service:
        name: nginx
        state: latest
 
