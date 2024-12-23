@@ -1,4 +1,4 @@
-- name: install nginx in multiple servrs
+- name: Install nginx in multiple servrs
   host: localhost
   vars: servers
   become: yes
