@@ -10,7 +10,7 @@
   - name: run nginx
     ansible.builtin.service:
        name: nginx
-       msg: "value of state must be one of: reloaded, restarted, started, stopped, got: latest"
+       state: latest
 
   - name: Open firewall for HTTP and HTTPS
     ansible.builtin.firewalld:
