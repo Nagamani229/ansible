@@ -44,3 +44,16 @@ localhost
 44.212.39.246
 172.31.83.81
 
+
+[roboshop:children]
+web
+user 
+rabbitmq
+dispatch
+redis
+cart
+catalogue
+shipping 
+payment
+mongodb
+mysql
