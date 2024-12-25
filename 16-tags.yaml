@@ -4,14 +4,14 @@
   - name: ping the server
     ansible.builtin.ping:
 
-- name: print message
-  ansible.builtin.debug:
-    msg: "Hello DevOps"
-  tags:
-  - DevOps
+  - name: print message
+    ansible.builtin.debug:
+      msg: "Hello DevOps"
+    tags:
+    - DevOps
 
-- name: print message
-  ansible.builtin.debug:
+  - name: print message
+    ansible.builtin.debug:
       msg: "Hello AWS"
-  tags:
-  - AWS
+    tags:
+    - AWS
